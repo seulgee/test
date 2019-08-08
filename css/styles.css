@@ -3,16 +3,19 @@
     src: url("../fonts/Action NBA Condensed app TTF 170711/Action NBA Cond App-Bold.ttf");
 }
 
-body {
-    /*/ this is only for demo purposes */
-    background-color: #000000;
-}
-
 #container {
     margin: auto;
     text-align: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+}
+
+/*/ background is for demo purposes */
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
 }
 
 /*/ text style for phones */
