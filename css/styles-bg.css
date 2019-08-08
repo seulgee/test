@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#top {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    background-image: url(../images/top.gif);
+    background-position: top;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#bottom {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    bottom: 0;
+    background-image: url(../images/bottom.gif);
+    background-position: bottom;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#gif-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: 1;
+    overflow-y: hidden;
+    background-image: url(../images/bg_optimized.gif);
+    background-size: cover;
+    background-position: center;
+}

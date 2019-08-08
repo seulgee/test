@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Action";
+    src: url("../fonts/Action NBA Condensed app TTF 170711/Action NBA Cond App-Bold.ttf");
+}
+
+body {
+    /*/ this is only for demo purposes */
+    background-color: #000000;
+}
+
+#container {
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*/ text style for phones */
+/*/ only change font-size property for tablets */
+#message {
+    position: fixed;
+    line-height: 100vh;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Action', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 50pt;
+    letter-spacing: 0.5pt;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.35, 0.5, 0.85, 1);
+        -webkit-transition-timing-function: cubic-bezier(0.35, 0.5, 0.85, 1);
+        -moz-transition-timing-function: cubic-bezier(0.35, 0.5, 0.85, 1);
+        -ms-transition-timing-function: cubic-bezier(0.35, 0.5, 0.85, 1);
+}
+
+#loader-container {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 100%
+}
+
+#loader {
+    margin: auto;
+    opacity: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-24px);
+        -webkit-transform: translateY(-24px);
+        -moz-transform: translateY(-24px);
+        -ms-transform: translateY(-24px);
+}
