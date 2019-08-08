@@ -16,6 +16,8 @@ body {
     height: 50%;
     position: fixed;
     top: 0;
+    /*/ for phones */
+    /*/ for tablet see media queries below*/
     background-image: url(../images/bg_phone-top.gif);
     background-size: contain;
     background-position: top;
@@ -28,6 +30,8 @@ body {
     height: 50%;
     position: fixed;
     bottom: 0;
+    /*/ for phones */
+    /*/ for tablet see media queries below*/
     background-image: url(../images/bg_phone-bottom.gif);
     background-size: contain;
     background-position: bottom;
@@ -42,7 +46,9 @@ body {
     z-index: 3;
     opacity: 1;
     overflow-y: hidden;
-    background-image: url(../images/bg_optimized.gif);
+    /*/ for phones */
+    /*/ for tablet see media queries below*/
+    background-image: url(../images/bg_phone.gif);
     background-size: cover;
     background-position: center;
 }
@@ -61,4 +67,18 @@ body {
         -moz-transform: translateY(+105%);
         -ms-transform: translateY(+105%);
     transition: .4s;
+}
+
+@media screen and (min-width: 960px) {
+    #top {
+        background-image: url(../images/bg_tablet-top.gif);
+    }
+
+    #bottom {
+        background-image: url(../images/bg_tablet-bottom.gif);
+    }
+
+    #gif-container {
+        background-image: url(../images/bg_tablet.gif);
+    }
 }
