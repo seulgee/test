@@ -16,7 +16,8 @@ body {
     height: 50%;
     position: fixed;
     top: 0;
-    background-image: url(../images/top.gif);
+    background-image: url(../images/bg_phone-top.gif);
+    background-size: contain;
     background-position: top;
     overflow: hidden;
     z-index: 1;
@@ -27,7 +28,8 @@ body {
     height: 50%;
     position: fixed;
     bottom: 0;
-    background-image: url(../images/bottom.gif);
+    background-image: url(../images/bg_phone-bottom.gif);
+    background-size: contain;
     background-position: bottom;
     overflow: hidden;
     z-index: 2;
@@ -43,4 +45,20 @@ body {
     background-image: url(../images/bg_optimized.gif);
     background-size: cover;
     background-position: center;
+}
+
+.moveTop {
+    transform: translateY(-105%);
+        -webkit-transform: translateY(-105%);
+        -moz-transform: translateY(-105%);
+        -ms-transform: translateY(-105%);
+    transition: .4s;
+}
+
+.moveBottom {
+    transform: translateY(+105%);
+        -webkit-transform: translateY(+105%);
+        -moz-transform: translateY(+105%);
+        -ms-transform: translateY(+105%);
+    transition: .4s;
 }
